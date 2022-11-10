@@ -1,0 +1,35 @@
+# Nmap 7.92 scan initiated Thu Nov 10 00:38:27 2022 as: nmap -sV -p 5797,10001,912,7680,49677,49670,4040,49665,49669,49666,49667,49668,49664 -v -Pn -oN nmap-192.168.1.5.txt 192.168.1.5
+Nmap scan report for 192.168.1.5 (192.168.1.5)
+Host is up (0.0011s latency).
+
+PORT      STATE    SERVICE     VERSION
+912/tcp   open     vmware-auth VMware Authentication Daemon 1.0 (Uses VNC, SOAP)
+4040/tcp  filtered yo-main
+5797/tcp  open     unknown
+7680/tcp  open     pando-pub?
+10001/tcp open     scp-config?
+49664/tcp open     msrpc       Microsoft Windows RPC
+49665/tcp open     msrpc       Microsoft Windows RPC
+49666/tcp open     msrpc       Microsoft Windows RPC
+49667/tcp open     msrpc       Microsoft Windows RPC
+49668/tcp open     msrpc       Microsoft Windows RPC
+49669/tcp open     msrpc       Microsoft Windows RPC
+49670/tcp open     tcpwrapped
+49677/tcp open     unknown
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port49677-TCP:V=7.92%I=7%D=11/10%Time=636C8E5F%P=x86_64-pc-linux-gnu%r(
+SF:GenericLines,20,"\x01\0\x03\x01\x05\0\x07\0\t\0\r\xc8\r\0\x0f\0\x11\0\x
+SF:13\0\x15\0\x17\0\x19\0\x1b\0\x1d\0\x1f\0")%r(GetRequest,20,"\x01\0\x03\
+SF:x01\x05\0\x07\0\t\0\r\xc8\r\0\x0f\0\x11\0\x13\0\x15\0\x17\0\x19\0\x1b\0
+SF:\x1d\0\x1f\0")%r(HTTPOptions,20,"\x01\0\x03\x01\x05\0\x07\0\t\0\r\xc8\r
+SF:\0\x0f\0\x11\0\x13\0\x15\0\x17\0\x19\0\x1b\0\x1d\0\x1f\0")%r(RTSPReques
+SF:t,20,"\x01\0\x03\x01\x05\0\x07\0\t\0\r\xc8\r\0\x0f\0\x11\0\x13\0\x15\0\
+SF:x17\0\x19\0\x1b\0\x1d\0\x1f\0")%r(TerminalServer,20,"\x01\0\x03\x01\x05
+SF:\0\x07\0\t\0\r\xc8\r\0\x0f\0\x11\0\x13\0\x15\0\x17\0\x19\0\x1b\0\x1d\0\
+SF:x1f\0")%r(NCP,20,"\x01\0\x03\x01\x05\0\x07\0\t\0\r\xc8\r\0\x0f\0\x11\0\
+SF:x13\0\x15\0\x17\0\x19\0\x1b\0\x1d\0\x1f\0");
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Nov 10 00:41:03 2022 -- 1 IP address (1 host up) scanned in 156.27 seconds
